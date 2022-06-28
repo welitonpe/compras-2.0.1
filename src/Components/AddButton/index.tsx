@@ -1,10 +1,14 @@
 import { Button } from "@mantine/core";
 
-const AddButton = () => {
-  return (
-    <Button color="green" radius="xl" size="xl" compact>
-      +
-    </Button>
-  );
+type AddButtonProps = {
+	onClick: () => void;
+};
+const AddButton: React.FC<AddButtonProps> = ({ onClick }) => {
+	console.log(onClick);
+	return (
+		<Button color="green" radius="xl" size="xl" compact onClick={onClick}>
+			+
+		</Button>
+	);
 };
 export default AddButton;

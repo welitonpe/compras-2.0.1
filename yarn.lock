@@ -373,6 +373,11 @@
     "react-popper" "^2.2.5"
     "react-textarea-autosize" "^8.3.2"
 
+"@mantine/form@^4.2.11":
+  "integrity" "sha512-9qlxtHIXPhTC7HtjBCDWVxjKaUYRy01HY9h9GIdMtA1++bTtu94NU2/7m0Tjjewl5R0MpLxVAim18WKQxTJ3dw=="
+  "resolved" "https://registry.npmjs.org/@mantine/form/-/form-4.2.11.tgz"
+  "version" "4.2.11"
+
 "@mantine/hooks@^4.2.7", "@mantine/hooks@4.2.7":
   "integrity" "sha512-lBzoVjiqCCbQyr9YIRReFCo2jSXAZGSOgf1QDVa4rq3BxkwVDBsriHOpvG9h4mq2sWh4sjzPvfgy/OK/e2QpYQ=="
   "resolved" "https://registry.npmjs.org/@mantine/hooks/-/hooks-4.2.7.tgz"
@@ -610,11 +615,6 @@
   "integrity" "sha512-mfBcbqc0qc6RlxrsIgLG2wCqkiPAjEezHxGTu7p3dHHFOurH4EjS9rFZndX5axC8264rI1Pcbw8uQP39oZckeA=="
   "resolved" "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.141.tgz"
   "version" "1.4.141"
-
-"esbuild-windows-64@0.14.42":
-  "integrity" "sha512-j3cdK+Y3+a5H0wHKmLGTJcq0+/2mMBHPWkItR3vytp/aUGD/ua/t2BLdfBIzbNN9nLCRL9sywCRpOpFMx3CxzA=="
-  "resolved" "https://registry.npmjs.org/esbuild-windows-64/-/esbuild-windows-64-0.14.42.tgz"
-  "version" "0.14.42"
 
 "esbuild@^0.14.27":
   "integrity" "sha512-V0uPZotCEHokJdNqyozH6qsaQXqmZEOiZWrXnds/zaH/0SyrIayRXWRB98CENO73MIZ9T3HBIOsmds5twWtmgw=="
