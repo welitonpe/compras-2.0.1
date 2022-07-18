@@ -1,8 +1,12 @@
-import { useContext } from "react";
+import { useContext, ReactNode } from "react";
 import { Modal, Button, Group } from "@mantine/core";
 import AppContext, { ActionTypes } from "../../Context/Appcontext";
 
-const FormModal: React.FC = () => {
+type FormModalProps = {
+	children?: ReactNode;
+};
+
+const FormModal: React.FC<FormModalProps> = ({ children }) => {
 	const [state, dispatch] = useContext(AppContext);
 
 	return (
@@ -14,7 +18,7 @@ const FormModal: React.FC = () => {
 					dispatch({ payload: false, type: ActionTypes.SET_CLOSE_MODAL })
 				}
 			>
-				{/* Modal content */}
+				{children}
 			</Modal>
 			{/* <Group position="center">
         <Button

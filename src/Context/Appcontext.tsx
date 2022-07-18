@@ -32,7 +32,7 @@ const initialState: InitialState = {
 		unitaryPrice: 1,
 		quantity: 5,
 	},
-	list: [{ id: 1, name: "John Doe", unitaryPrice: 1, quantity: 1 }],
+	list: [{ id: 1, name: "Flour", unitaryPrice: 1, quantity: 1 }],
 	modal: false,
 	total: 0,
 };
@@ -58,6 +58,8 @@ const AppContext = createContext<[InitialState, (param: AppActions) => void]>([
 ]);
 
 function reducer(state: InitialState, action: any) {
+	console.log(state, action);
+
 	switch (action.type) {
 		case ActionTypes.SET_ITEM:
 			const items = [...initialState.list, action.payload];
