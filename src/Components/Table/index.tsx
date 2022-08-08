@@ -14,8 +14,8 @@ const TableApp: React.FC = () => {
     </tr>
   );
 
-  const rows = state.list.map(({ id, name, unitaryPrice, quantity }) => (
-    <tr key={id}>
+  const rows = state.list.map(({ name, unitaryPrice, quantity }, index) => (
+    <tr key={index}>
       <td>{name}</td>
       <td>{quantity}</td>
       <td>{unitaryPrice}</td>
