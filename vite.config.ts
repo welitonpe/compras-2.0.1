@@ -1,7 +1,23 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import react from "@vitejs/plugin-react";
+import path from "path";
+import { defineConfig } from "vite";
+import { UserConfigExport } from "vitest/config";
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()]
-})
+	build: { assetsDir: "static", outDir: "build" },
+	plugins: [react()],
+	server: {
+		port: 3000,
+	},
+	test: {
+		coverage: {
+			all: true,
+			include: [path.resolve(__dirname), "src"],
+		},
+		environment: "jsdom",
+		exclude: ["node_modules", "build"],
+		globals: true,
+		include: ["**/(*.)?{test,spec}.{ts,tsx}"],
+		setupFiles: ["./src/setupTests.ts"],
+	},
+} as UserConfigExport);
