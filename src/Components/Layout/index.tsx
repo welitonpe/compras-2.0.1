@@ -20,17 +20,16 @@ const Layout = () => {
   const [opened, setOpened] = useState(false);
   return (
     <AppShell
-      // aside={
-      //   <MediaQuery smallerThan="sm" styles={{ display: "none" }}>
-      //     <Aside hiddenBreakpoint="sm" p="md" width={{ sm: 200, lg: 300 }}>
-      //       <Text>Application sidebar</Text>
-      //     </Aside>
-      //   </MediaQuery>
-      // }
+      aside={
+        <MediaQuery smallerThan="sm" styles={{ display: "none" }}>
+          <Aside hiddenBreakpoint="sm" p="md" width={{ sm: 200, lg: 300 }}>
+            <Text>Application sidebar</Text>
+          </Aside>
+        </MediaQuery>
+      }
       footer={
         <Footer height={60} p="md">
           <FooterApp />
-          {/* Application footer */}
         </Footer>
       }
       header={
@@ -48,7 +47,6 @@ const Layout = () => {
               />
             </MediaQuery>
             <HeaderApp />
-            <Text>Application header</Text>
           </div>
         </Header>
       }
@@ -75,7 +73,6 @@ const Layout = () => {
       navbarOffsetBreakpoint="sm"
     >
       <Outlet />
-      {/* <Text>Resize app to see responsive navbar in action</Text> */}
     </AppShell>
   );
 };

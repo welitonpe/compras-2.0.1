@@ -1,4 +1,4 @@
 const HeaderApp: React.FC = () => {
-  return <div>HeaderApp</div>;
+  return <div>COMPRAS</div>;
 };
 export default HeaderApp;

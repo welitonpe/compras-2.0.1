@@ -3,24 +3,24 @@ import { Modal, Button, Group } from "@mantine/core";
 import AppContext, { ActionTypes } from "../../Context/Appcontext";
 
 type FormModalProps = {
-	children?: ReactNode;
+  children?: ReactNode;
 };
 
 const FormModal: React.FC<FormModalProps> = ({ children }) => {
-	const [state, dispatch] = useContext(AppContext);
+  const [state, dispatch] = useContext(AppContext);
 
-	return (
-		<>
-			<Modal
-				opened={state.modal}
-				title="Introduce yourself!"
-				onClose={() =>
-					dispatch({ payload: false, type: ActionTypes.SET_CLOSE_MODAL })
-				}
-			>
-				{children}
-			</Modal>
-			{/* <Group position="center">
+  return (
+    <>
+      <Modal
+        opened={state.modal}
+        title="Product"
+        onClose={() =>
+          dispatch({ payload: false, type: ActionTypes.SET_MODAL_VISIBLE })
+        }
+      >
+        {children}
+      </Modal>
+      {/* <Group position="center">
         <Button
           onClick={() =>
             dispatch({ payload: true, type: ActionTypes.SET_OPEN_MODAL })
@@ -29,7 +29,7 @@ const FormModal: React.FC<FormModalProps> = ({ children }) => {
           Open Modal
         </Button>
       </Group> */}
-		</>
-	);
+    </>
+  );
 };
 export default FormModal;
