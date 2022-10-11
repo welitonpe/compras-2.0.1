@@ -35,7 +35,7 @@ const Layout = () => {
       header={
         <Header height={70} p="md">
           <div
-            style={{ display: "flex", alignItems: "center", height: "100%" }}
+            style={{ display: "flex", alignItems: "center", height: "100%",justifyContent:"stretch"}}
           >
             <MediaQuery largerThan="sm" styles={{ display: "none" }}>
               <Burger

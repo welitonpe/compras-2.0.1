@@ -5,7 +5,7 @@ type AddButtonProps = {
 };
 const AddButton: React.FC<AddButtonProps> = ({ onClick }) => {
   return (
-    <Button color="green" radius="xl" size="xl" compact onClick={onClick}>
+    <Button color="green" radius="sm" size="xl" compact onClick={onClick}>
       +
     </Button>
   );

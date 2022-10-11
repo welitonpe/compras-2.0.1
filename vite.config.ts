@@ -4,7 +4,9 @@ import { defineConfig } from "vite";
 import { UserConfigExport } from "vitest/config";
 
 export default defineConfig({
-	build: { assetsDir: "static", outDir: "build" },
+	build: { assetsDir: "static", outDir: "build" }, generate: {
+		dir: 'public'
+	  },
 	plugins: [react()],
 	server: {
 		port: 3000,

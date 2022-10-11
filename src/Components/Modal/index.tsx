@@ -17,6 +17,12 @@ const FormModal: React.FC<FormModalProps> = ({ children }) => {
         onClose={() =>
           dispatch({ payload: false, type: ActionTypes.SET_MODAL_VISIBLE })
         }
+        overlayColor={"black"}
+        overlayOpacity={0.85}
+        overlayBlur={3}
+        transition="fade"
+        transitionDuration={600}
+        transitionTimingFunction="ease"
       >
         {children}
       </Modal>
