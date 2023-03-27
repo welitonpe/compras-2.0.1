@@ -71,10 +71,6 @@ async function reducer(state: InitialState, action: any) {
 	switch (action.type) {
 		case ActionTypes.SET_LIST:
 			const product = await teste(action);
-			console.log(
-				"🚀 ~ file: Appcontext.tsx ~ line 70 ~ reducer ~ product",
-				product,
-			);
 
 			return {
 				...state,
